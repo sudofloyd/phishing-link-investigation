@@ -1,0 +1,99 @@
+# Investigation Methodology
+
+## 1. Objective
+
+The objective of this investigation was to assess a suspicious scholarship website promoted through a WhatsApp message claiming to advertise the University of Toronto's Lester B. Pearson International Scholarship.
+
+The investigation focused on identifying potential phishing indicators, reviewing available threat-intelligence results, and documenting observed website behaviour.
+
+## 2. Investigation Process
+
+### Step 1: Review the Original Message
+
+I examined the scholarship promotion received through WhatsApp.
+
+I noted the scholarship claims, the advertised deadline, and the application link provided in the message.
+
+### Step 2: Identify the URLs
+
+I recorded the URL received through WhatsApp:
+
+`https://www.link-trim.com/utoronto-scholarship`
+
+I also recorded the website investigated:
+
+`https://www.utoronto.priosoccer.com/`
+
+These were documented separately because the redirect relationship between them was not independently established in the available evidence.
+
+### Step 3: Review Security Scan Results
+
+I reviewed the reported VirusTotal results for the suspicious website.
+
+The initial results showed 2 detections out of 93 security vendors, including phishing-related classifications.
+
+I treated these results as indicators of potential risk rather than relying on the detection count alone.
+
+### Step 4: Observe Website Behaviour
+
+During my visit, I observed a countdown-style counter showing how many students were supposedly applying.
+
+When I reloaded the page or reopened the link, the count started again.
+
+I documented this behaviour because restarting counters can be used to create urgency on deceptive websites. However, I did not independently examine the counter's code or implementation.
+
+### Step 5: Assess the Domain
+
+I compared the investigated domain with the University's official domain.
+
+The investigated website used `priosoccer.com`, while the University's official website uses `utoronto.ca`.
+
+This discrepancy raised concerns about possible university impersonation.
+
+### Step 6: Record Availability Changes
+
+The website was subsequently reported to be taken down or no longer accessible.
+
+I documented this as a later observation. The reason for the website's unavailability and the identity of whoever may have removed it were not established.
+
+## 3. Assessment Criteria
+
+I considered the following indicators together:
+
+- The content and distribution method of the scholarship message.
+- The difference between the investigated domain and the university's official domain.
+- The restarting application counter.
+- The reported phishing-related VirusTotal detections.
+- The reported subsequent unavailability of the website.
+
+Considering these indicators together supported treating the website as a phishing threat.
+
+## 4. Limitations
+
+This investigation was based on the observations and scan results available to me.
+
+The following were not independently verified:
+
+- The identity of the website operator.
+- Whether the website collected personal information or credentials.
+- The exact redirect behaviour between the two recorded URLs.
+- The implementation of the application counter.
+- The reason the website became unavailable.
+- Whether any individual suffered financial loss or account compromise.
+
+## 5. Defensive Recommendations
+
+- Verify scholarship offers through official university channels.
+- Inspect domains carefully before opening links or submitting information.
+- Use reputable threat-intelligence tools to assess suspicious URLs.
+- Avoid entering sensitive information into unverified websites.
+- Preserve screenshots, URLs, scan reports, and collection dates when documenting incidents.
+- Report suspected impersonation to the relevant institution or cybersecurity reporting service.
+
+## 6. Conclusion
+
+This investigation demonstrates a basic defensive threat-intelligence workflow: review a suspicious message, record relevant URLs, examine security scan results, document observed behaviour, assess the indicators, and provide safety recommendations.
+
+The combined findings supported classifying the website as a suspected phishing threat.
+
+---
