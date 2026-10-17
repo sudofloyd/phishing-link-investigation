@@ -133,9 +133,3 @@ These limitations do not eliminate the warning signs identified; they distinguis
 This project was conducted for educational and defensive cybersecurity purposes. It documents suspicious activity using publicly available information and observed website behaviour.
 
 No unauthorized access, exploitation, or submission of personal information is claimed.
-
----
-
-**Created by Floyd Godson (Sudo Floyd)**
-
-Cybersecurity | Threat Intelligence | Security Awareness
